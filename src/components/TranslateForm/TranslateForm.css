@@ -1,0 +1,42 @@
+.translate-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.translate-form__translate {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--radius-control);
+  background: var(--color-blue-700);
+  color: var(--color-gray-50);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  transition:
+    background-color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.translate-form__translate:hover:not(:disabled) {
+  background: #2f4cc4;
+}
+
+.translate-form__translate:focus-visible {
+  outline: 2px solid var(--color-blue-300);
+  outline-offset: 2px;
+}
+
+.translate-form__translate:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Stack the two panels below the desktop breakpoint (tablet + mobile). */
+@media (max-width: 1024px) {
+  .translate-form {
+    grid-template-columns: 1fr;
+  }
+}
