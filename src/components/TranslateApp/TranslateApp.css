@@ -1,0 +1,53 @@
+.translate-app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--color-black);
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(4, 7, 17, 0.1) 0%,
+      rgba(4, 7, 17, 0.85) 70%,
+      var(--color-black) 100%
+    ),
+    url('../../assets/hero.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.translate-app__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+
+/* The heading is for assistive tech and SEO; the design shows only the logo. */
+.translate-app__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .translate-app {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(4, 7, 17, 0.1) 0%,
+        rgba(4, 7, 17, 0.85) 60%,
+        var(--color-black) 100%
+      ),
+      url('../../assets/hero-sm.jpg');
+  }
+
+  .translate-app__container {
+    padding: 0 16px 40px;
+  }
+}
