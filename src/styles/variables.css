@@ -1,0 +1,30 @@
+/**
+ * Design tokens — single source of truth for color and typography.
+ * Hex values are taken directly from the challenge brief.
+ */
+:root {
+  /* Color palette */
+  --color-gray-600: #4d5562; /* muted icons & inactive labels */
+  --color-gray-50: #f9fafb; /* primary text on dark */
+  --color-gray-300: #d2d5da; /* secondary text */
+  --color-gray-700: #394150; /* active tab / control surface */
+  --color-black: #040711; /* page backdrop */
+  --color-blue-700: #263fa9; /* primary action */
+  --color-blue-300: #7ca9f3; /* primary action hover / accents */
+  --color-panel: #121826cc; /* translucent panel surface */
+  --color-panel-soft: #212936cc; /* translucent control surface */
+
+  /* Typography — DM Sans across three roles */
+  --font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-size-base: 1rem; /* 16px / Bold */
+  --font-size-sm: 0.875rem; /* 14px / Bold */
+  --font-size-xs: 0.75rem; /* 12px / Medium */
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Spacing & shape */
+  --radius-panel: 16px;
+  --radius-control: 8px;
+  --radius-pill: 8px;
+  --space-panel: 24px;
+}
